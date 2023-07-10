@@ -1,0 +1,173 @@
+@font-face {
+    font-family: logoFont;
+    src: url(./Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0e0e0e;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container { 
+    display: flex;
+    max-width: 1450px;
+    background-color: #fff;
+    width: 80vw;
+}
+
+.section-container {
+    padding-left: 40px;
+    padding-right: 255px;
+}
+
+aside { 
+    height: 100%;
+    position: relative;
+}
+
+.side-img { 
+    display: block;
+    width: 500px;
+    height: 100vh;
+}
+
+.logo-container {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.logo {
+    width: 100px;
+    height: 130px;
+}
+
+.logo-text {
+    color: #fff;
+    font-family: logoFont;
+    font-size: 6rem;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f9fafb;
+    /* padding-left: 30px;
+    padding-right: 160px; */
+}
+
+.main .h2-text {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    padding-left: 40px;
+}
+
+main .p-text {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+
+main .p-text2 {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 40px;
+    color: #1f2937;
+}
+
+.form {
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+
+form fieldset { 
+    display: flex;
+    border: none;
+    padding: 0;
+    box-shadow: 0 4px 10px -6px gray;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    margin: 0;
+}
+
+form .column2 {
+    margin-left: 50px;
+}
+
+form .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    color: #1f2937;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    outline: none;
+}
+
+form input:required:valid {
+    border-color: green;
+}
+
+form input:invalid {
+    border-color: red;
+}
+
+.button-container {
+    padding-left: 40px;
+}
+
+button {
+    background-color: #596d48;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 60px;
+    
+}
+
+.bottom-text {
+    color: #1f2937;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-left: 40px;
+}
+
+.log-in {
+    color: #596d48;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+

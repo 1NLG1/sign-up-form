@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="aside-img">
+            <img 
+                class="side-img" 
+                src="./photo-1585202900225-6d3ac20a6962.avif"  
+                alt="background image"
+            >
+            <div class="logo-container">
+                <img 
+                    src="./odin-lined.png" 
+                    alt=""
+                    class="logo"
+                > 
+                <h1 class="logo-text">ODIN</h1>
+            </div> 
+        </aside>
+        <main class="main">
+            <section class="text">
+                    <h2 class="h2-text">
+                        This is not a real online service! 
+                        You know you need something<br> like this in your life to help you 
+                        realize your deepest dreams.<br> Sign up <em>now</em> to get started.
+                    </h2>
+                    <p class="p-text"> You <em>know</em> you want to.</p>
+            </section>
+            <section class="form">
+                <p class="p-text2">Let's do this!</p>
+                    <form action="#" method="post">
+                        <fieldset>
+                                <div class="column1">
+                                    <div class="input-container">
+                                        <label for="first-name">FIRST NAME</label>
+                                        <input 
+                                            class="testing" 
+                                            type="text" 
+                                            id="first-name" 
+                                            name="first-name" 
+                                            placeholder="Thor"
+                                            minlength="3" 
+                                            required
+                                        >
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="email">EMAIL</label>
+                                        <input 
+                                            type="email"
+                                            id="email" 
+                                            name="email" 
+                                            required
+                                         >
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="password">PASSWORD</label>
+                                        <input 
+                                            type="password" 
+                                            id="password" 
+                                            name="password"
+                                            minlength="8" 
+                                            required
+                                        >
+                                        <p id="password-error-message" style="color:red;">*passwords do not match</p>
+                                        <p id="password-success-message" style="color: green; display: none;">*passwords match</p>
+                                    </div>
+                                </div>
+                                <div class="column2">
+                                    <div class="input-container">
+                                        <label for="last-name">LAST NAME</label>
+                                        <input 
+                                            type="text" 
+                                            id="last-name" 
+                                            name="last-name" 
+                                            placeholder="Odinson"
+                                            minlength="3" 
+                                            required
+                                        >
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="phone-number">PHONE NUMBER</label>
+                                        <input 
+                                            type="number" 
+                                            id="phone-number"
+                                            name="phone-number"
+                                            required
+                                         >
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                                        <input 
+                                            type="password" 
+                                            id="confirm-password"
+                                            name="confirm-password"
+                                            minlength="8" 
+                                            required
+                                            onkeyup="validatePassword()"
+                                        >
+                                    </div>
+                                </div>
+                        </fieldset>
+                        <div class="button-container">
+                            <button class="button-register" type="submit">Create Account</button>
+                        </div>
+                        <p class="bottom-text">Already have an account? <a class="log-in" href="#">Log in</a></p>
+                    </form>
+            </section>
+        </main>
+    </div>
+    <script>
+        let validatePassword = () => {
+            let password = document.getElementById('password');
+            let confirmPassword = document.getElementById('confirm-password');
+            let error = document.getElementById('password-error-message');
+            let success = document.getElementById('password-success-message')
+            if (password.value != confirmPassword.value) {
+                confirmPassword.style.borderColor = 'red'
+                console.log('does not match the password')
+                success.style.display = 'none'
+                error.style.display = 'block'
+                
+            } else {
+                confirmPassword.style.borderColor = 'green'
+                console.log('password are matching')
+                success.style.display = 'block'
+                error.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
+
